@@ -1,0 +1,20 @@
+
+site_name: My Hydrology
+
+site_author: Wei Mao
+repo_name: "GitHub"
+
+nav:
+    - Home: index.md
+    - About: about.md
+    - 'Test': 
+      - 'test1': 'guide/test.md'
+      - 'test2': 'guide/test2.md'
+
+
+theme:
+  name: 'material'
+  color_mode: 'dark'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
