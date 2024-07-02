@@ -1,20 +1,42 @@
-
 site_name: My Hydrology
-
+site_url: https://my-hydrology.top
 site_author: Wei Mao
-repo_name: "GitHub"
-
-nav:
-    - Home: index.md
-    - About: about.md
-    - 'Test': 
-      - 'test1': 'guide/test.md'
-      - 'test2': 'guide/test2.md'
-
+site_description: My own website about hydrology
 
 theme:
   name: 'material'
-  color_mode: 'dark'
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: zh
+          name: 中文
+          build: true
+        
