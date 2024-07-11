@@ -1,13 +1,17 @@
 ---
-title: Test
-date: 2024-07-11
-authors: [mw]
-slug: adding-a-blog
+title: wrf-hydro学习笔记
+date: 2024-07-10
+authors: [wei]
+slug: model
 description: >
-  check blog
+  wrf Hydro model
 categories:
-  - General
+  - model
 ---
+
+wrf-hydro 学习笔记
+
+<!-- more -->
 
 # wrf-hydro学习笔记
 该笔记对应的学习资料为，The NCAR WRF-Hydro® Modeling System Technical Description，Version 5.2

@@ -1,35 +1,14 @@
 site_name: My Hydrology
 site_url: https://my-hydrology.top
+site_description: My hydrology website
 site_author: Wei Mao
-site_description: My own website about hydrology
+
+repo_url: https://github.com/Weiwei-Mao/website
+repo_name: Weiwei-Mao/website
 
 theme:
-  name: 'material'
-  palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/link
-        name: Switch to light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: indigo
-      toggle:
-        icon: material/toggle-switch-off
-        name: Switch to system preference
-  font:
-    text: Roboto
-    code: Roboto Mono
-  icon:
-    previous: fontawesome/solid/angle-left
-    next: fontawesome/solid/angle-right
+  name: material
+  logo: assets/logo.jpg
   features:
     - announce.dismiss
     - content.action.edit
@@ -59,18 +38,51 @@ theme:
     - toc.follow
     # - toc.integrate
     - header.autohide
+    
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/logo.jpg
+    
+  user_color_mode_toggle: true
+  locale: en
+  analytics: {gtag: 'G-274394082'}
+  highlightjs: true
+  hljs_languages:
+    - python
+  custom_dir: 'override'
+
+nav:
+  - Welcome: index.md
+  - Introduction: introduction.md
+  - Blog:
+      - Overview: blog/index.md
+      # - Archive: blog/archive.md
+  - About:
+    - Release Notes: about/release-notes.md
+    - Contributing: about/contributing.md
+    - License: about/license.md
 
 plugins:
-  - i18n:
-      docs_structure: folder
-      languages:
-        - locale: en
-          default: true
-          name: English
-          build: true
-        - locale: zh
-          name: 中文
-          build: true
   - blog:
       post_date_format: medium
       post_url_date_format: yyyy/MM/dd
@@ -84,41 +96,71 @@ plugins:
 
       blog_toc: true
       post_readtime_words_per_minute: 300
+      theme:
+        name: button
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
 
-nav:
-  - Home: index.md
-  - Introduction: introduction.md
-  - Blog:
-      - Overview: blog/index.md
-      # - Archive: blog/archive.md
-  - About:
-    - Release Notes: about/release-notes.md
-    - Contributing: about/contributing.md
-    - License: about/license.md
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 extra:
-  # analytics: 
-    # feedback:
-      # title: Was this page helpful?
-      # ratings:
-        # - icon: material/emoticon-happy-outline
-          # name: This page was helpful
-          # data: 1
-          # note: >-
-            # Thanks for your feedback!
-        # - icon: material/emoticon-sad-outline
-          # name: This page could be improved
-          # data: 0
-          # note: >- 
-            # Thanks for your feedback! Help us improve this page by
-            # using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/Weiwei-Mao
+      link: https://github.com/GISchat
   generator: false
-      
-copyright: Copyright &copy; 2024- 2028 Wei Mao
+  
+extra_css:
+  - assets/custom.css
+  
+copyright: Copyright &copy; 2024 GISChat
+ 
