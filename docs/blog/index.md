@@ -1,4 +1,3 @@
-# Blog
+# Welcome to My Blog
 
-我的博客
-
+Here you'll find the latest updates and posts.

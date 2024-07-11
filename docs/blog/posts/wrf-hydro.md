@@ -1,7 +1,12 @@
 ---
-title: "WRF-Hydro Post"
-date: 2024-07-02
-tags: ["hydrology", "WRF-Hydro"]
+title: Test
+date: 2024-07-11
+authors: [mw]
+slug: adding-a-blog
+description: >
+  check blog
+categories:
+  - General
 ---
 
 # wrf-hydro学习笔记
