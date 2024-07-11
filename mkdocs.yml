@@ -96,8 +96,8 @@ plugins:
 
       blog_toc: true
       post_readtime_words_per_minute: 300
-      theme:
-        name: button
+      # theme:
+        # name: button
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
