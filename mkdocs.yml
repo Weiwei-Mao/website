@@ -11,8 +11,8 @@ theme:
   logo: assets/logo.jpg
   features:
     - announce.dismiss
-    - content.action.edit
-    - content.action.view
+    # - content.action.edit
+    # - content.action.view
     - content.code.annotate
     - content.code.copy
     # - content.code.select
@@ -29,7 +29,7 @@ theme:
     - navigation.prune
     - navigation.sections
     - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
@@ -46,8 +46,8 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: teal
+      accent: blue
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
@@ -76,11 +76,10 @@ nav:
   - Introduction: introduction.md
   - Blog:
       - Overview: blog/index.md
-      # - Archive: blog/archive.md
   - About:
-    - Release Notes: about/release-notes.md
-    - Contributing: about/contributing.md
-    - License: about/license.md
+      - Release Notes: about/release-notes.md
+      - Contributing: about/contributing.md
+      - License: about/license.md
 
 plugins:
   - blog:
@@ -160,7 +159,10 @@ extra:
   generator: false
   
 extra_css:
-  - assets/custom.css
+  - assets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
   
 copyright: Copyright &copy; 2024 GISChat
  

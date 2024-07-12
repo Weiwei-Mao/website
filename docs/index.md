@@ -1,22 +1,12 @@
----
-hide:
-  - navigation
-  - toc
----
-
-<div class="full-page-background" id="intro">
-  <span class="enter-site" onclick="enterSite()">&#x2304;</span>
+<div class="hero-section">
+  <h1> </h1>
 </div>
 
-<div class="main-content" id="main-content">
-  <h1 class="welcome-text">Welcome to My Website</h1>
-  <p>网站介绍内容...</p>
-  <!-- 其他内容 -->
-</div>
+<div class="content">
+  <!-- 你的其他内容 -->
+  ## Section 1
+  欢迎来到我的网站，这里是我的研究内容...
 
-<script>
-  function enterSite() {
-    document.getElementById('intro').style.display = 'none';
-    document.getElementById('main-content').style.display = 'block';
-  }
-</script>
+  ## Section 2
+  这里是更多的信息...
+</div>
