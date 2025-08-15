@@ -1,6 +1,6 @@
-site_name: My Hydrology
+site_name: 毛威的个人主页
 site_url: https://my-hydrology.top
-site_description: My hydrology website
+site_description: 毛威的个人学术主页，专注于水文学研究
 site_author: Wei Mao
 
 repo_url: https://github.com/Weiwei-Mao/website
@@ -64,7 +64,7 @@ theme:
   favicon: assets/logo.jpg
     
   user_color_mode_toggle: true
-  locale: en
+  locale: zh
   analytics: {gtag: 'G-274394082'}
   highlightjs: true
   hljs_languages:
@@ -72,14 +72,13 @@ theme:
   custom_dir: 'override'
 
 nav:
-  - Welcome: index.md
-  - Introduction: introduction.md
-  - Blog:
-      - Overview: blog/index.md
-  - About:
-      - Release Notes: about/release-notes.md
-      - Contributing: about/contributing.md
-      - License: about/license.md
+  - 首页: index.md
+  - 关于我: about.md
+  - 研究: 
+      - research.md
+      - WRF-Hydro学习笔记: blog/posts/wrf-hydro.md
+  - 简历: cv/index.md
+  - 学术出版物: publications.md
 
 plugins:
   - blog:
@@ -155,7 +154,7 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/GISchat
+      link: https://github.com/Weiwei-Mao
   generator: false
   
 extra_css:
@@ -164,5 +163,4 @@ extra_css:
 extra_javascript:
   - javascripts/extra.js
   
-copyright: Copyright &copy; 2024 GISChat
- 
+copyright: Copyright &copy; 2024 Wei Mao
