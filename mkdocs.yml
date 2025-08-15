@@ -76,7 +76,7 @@ nav:
   - 关于我: about.md
   - 研究: 
       - research.md
-      - WRF-Hydro学习笔记: blog/posts/wrf-hydro.md
+      - WRF-Hydro学习笔记: blog/index.md
   - 简历: cv/index.md
   - 学术出版物: publications.md
 
