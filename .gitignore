@@ -68,3 +68,6 @@ ENV/
 
 # MkDocs documentation
 site*/
+
+CLAUDE.md
+.claude/
