@@ -1,7 +1,6 @@
 ---
 title: Publications
 date: 2024-01-01
-view: 4
 cms_exclude: true
 
 # View.

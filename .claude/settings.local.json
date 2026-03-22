@@ -41,7 +41,8 @@
       "Bash(grep -E \"\\\\.yml$|\\\\.yaml$\")",
       "Bash(git reset:*)",
       "Bash(grep -E \"themes.*\\\\.yml$|themes.*go\\\\.mod$|modules.*README\")",
-      "Bash(git clone:*)"
+      "Bash(git clone:*)",
+      "Bash(gh run:*)"
     ]
   }
 }
