@@ -35,7 +35,11 @@
       "Bash(git ls-tree:*)",
       "Bash(find D:/Acode/website -type f ! -path */.git/* ! -path */themes/wowchemy/*)",
       "Bash(git check-ignore:*)",
-      "Bash(git submodule:*)"
+      "Bash(git submodule:*)",
+      "Bash(rm \"D:/Acode/website/.gitmodules\")",
+      "Bash(rm -rf \"D:/Acode/website/themes/wowchemy/.git\")",
+      "Bash(grep -E \"\\\\.yml$|\\\\.yaml$\")",
+      "Bash(git reset:*)"
     ]
   }
 }
