@@ -1,0 +1,7 @@
+# Chinese language specific parameters
+# These override the default params.yaml for Chinese content
+
+header:
+  enable: true
+  language_switcher: true
+  theme_toggle: true
