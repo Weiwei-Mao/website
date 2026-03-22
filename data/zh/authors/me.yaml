@@ -13,6 +13,8 @@ postnominals:
 status:
   icon: "💧"
 role: 水文学研究者
+avatar:
+  filename: profile.png
 bio: |
   我是佛罗里达州立大学的一名水文学研究者。
 

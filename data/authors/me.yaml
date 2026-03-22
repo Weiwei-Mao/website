@@ -13,6 +13,8 @@ postnominals:
 status:
   icon: "💧"
 role: Hydrology Researcher
+avatar:
+  filename: profile.png
 bio: |
   I am a hydrology researcher at Florida State University.
 

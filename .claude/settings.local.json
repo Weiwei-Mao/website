@@ -43,7 +43,8 @@
       "Bash(grep -E \"themes.*\\\\.yml$|themes.*go\\\\.mod$|modules.*README\")",
       "Bash(git clone:*)",
       "Bash(gh run:*)",
-      "Bash(ls content/*.md)"
+      "Bash(ls content/*.md)",
+      "Bash(ls -lt *.jpg *.jpeg *.png *.webp)"
     ]
   }
 }
