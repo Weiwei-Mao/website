@@ -31,7 +31,11 @@
       "Bash(./hugo_temp/hugo.exe -v)",
       "Bash(curl -L -o hugo.exe \"https://github.com/gohugoio/hugo/releases/download/v0.123.0/hugo_extended_0.123.0_windows-amd64.exe\")",
       "Bash(cmd /c \"where hugo\")",
-      "Bash(cmd /c \"refreshenv && hugo version\")"
+      "Bash(cmd /c \"refreshenv && hugo version\")",
+      "Bash(git ls-tree:*)",
+      "Bash(find D:/Acode/website -type f ! -path */.git/* ! -path */themes/wowchemy/*)",
+      "Bash(git check-ignore:*)",
+      "Bash(git submodule:*)"
     ]
   }
 }

@@ -1,7 +1,7 @@
 # Ignore the contents of the _site directory and other cache directories
 _site/
 .sass-cache/
-.backup/
+# .backup/ - keep tracked for backup
 
 # Ignore the directory for local files during development
 local/
@@ -19,9 +19,6 @@ package-lock.json
 
 # Ignore folders related to IDEs
 .vscode/
-
-# Ignore Claude Code settings
-.claude/
 
 # Ignore files created by MacOS
 .DS_Store
