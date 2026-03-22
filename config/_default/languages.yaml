@@ -6,8 +6,7 @@
 en:
   languageCode: en-us
   languageName: English
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  weight: 1
 
 # Second language: Chinese
 zh:
@@ -15,6 +14,4 @@ zh:
   languageName: 简体中文
   contentDir: content/zh
   title: 毛威的学术主页
-  params:
-    description: 佛罗里达州立大学水文学研究者毛威的学术网站
   weight: 2
