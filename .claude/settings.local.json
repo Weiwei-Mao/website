@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git fetch:*)",
+      "Bash(git pull:*)",
+      "Bash(curl -L -o template.zip \"https://github.com/academicpages/academicpages.github.io/archive/refs/heads/master.zip\")",
+      "Bash(unzip -q template.zip)",
+      "Bash(mv academicpages.github.io-master/* .)",
+      "Bash(mv academicpages.github.io-master/.* .)",
+      "Bash(rm -rf academicpages.github.io-master template.zip)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "WebSearch",
+      "Bash(choco install:*)",
+      "Bash(winget install:*)",
+      "Bash(export PATH=\"$PATH:/c/Program Files/Hugo/bin\")",
+      "Bash(hugo version:*)",
+      "Read(//c/Program Files/Hugo/**)",
+      "Read(//c/ProgramData/chocolatey/bin//**)",
+      "Bash(curl -L -o hugo.exe \"https://github.com/gohugoio/hugo/releases/download/v0.158.0/hugo_extended_0.158.0_windows-amd64.exe\")",
+      "Bash(mv hugo.exe /tmp/)",
+      "Bash(chmod +x /tmp/hugo.exe)",
+      "Bash(/tmp/hugo.exe version:*)",
+      "Bash(curl -L -o hugo.zip \"https://github.com/gohugoio/hugo/releases/download/v0.123.0/hugo_extended_0.123.0_windows-amd64.zip\")",
+      "Bash(unzip -q hugo.zip -d hugo_temp)",
+      "Bash(./hugo_temp/hugo.exe new:*)",
+      "Bash(cp -r mysite/* .)",
+      "Bash(cp mysite/.* .)",
+      "Bash(./hugo_temp/hugo.exe -v)",
+      "Bash(curl -L -o hugo.exe \"https://github.com/gohugoio/hugo/releases/download/v0.123.0/hugo_extended_0.123.0_windows-amd64.exe\")",
+      "Bash(cmd /c \"where hugo\")",
+      "Bash(cmd /c \"refreshenv && hugo version\")"
+    ]
+  }
+}
