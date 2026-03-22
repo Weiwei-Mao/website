@@ -39,7 +39,9 @@
       "Bash(rm \"D:/Acode/website/.gitmodules\")",
       "Bash(rm -rf \"D:/Acode/website/themes/wowchemy/.git\")",
       "Bash(grep -E \"\\\\.yml$|\\\\.yaml$\")",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(grep -E \"themes.*\\\\.yml$|themes.*go\\\\.mod$|modules.*README\")",
+      "Bash(git clone:*)"
     ]
   }
 }
