@@ -5,6 +5,12 @@ summary: ''
 date: 2022-10-24
 type: landing
 
+# Language switch links
+link:
+  - url: /zh/
+    lang: zh
+    title: 简体中文
+
 design:
   # Default section spacing
   spacing: '6rem'
