@@ -1,74 +1,24 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# Ignore the contents of the _site directory and other cache directories
+_site/
+.sass-cache/
+.backup/
 
-# C extensions
-*.so
+# Ignore the directory for local files during development
+local/
 
-# Distribution / packaging
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-node_modules/
-parts/
-sdist/
-var/
-package*.json
-*.egg-info/
-.installed.cfg
-*.egg
+# Ignore the Gemfile that is generated
+Gemfile.lock
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+# Ignore files created by npm
+node_modules
+package-lock.json
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+# Ignore the vendor file at root level and bundle for alternative installation
+/vendor/
+.bundle/
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*,cover
-.hypothesis/
+# Ignore folders related to IDEs
+.vscode/
 
-# Translations
-*.mo
-
-# Scrapy stuff:
-.scrapy
-
-# PyBuilder
-target/
-
-# IPython Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# virtualenv
-venv/
-ENV/
-
-# MkDocs documentation
-site*/
-
-CLAUDE.md
-.claude/
-.bmad-core
+# Ignore files created by MacOS
+.DS_Store
